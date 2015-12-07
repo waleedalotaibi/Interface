@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C48a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,20 +18,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bD-oU-zcb" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="28" width="560" height="208"/>
+                                <rect key="frame" x="20" y="74" width="560" height="208"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="gk2-xa-C22"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="3Hi-CJ-SfR"/>
                                 </connections>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqM-zk-cBa">
+                                <rect key="frame" x="0.0" y="30" width="600" height="44"/>
+                                <animations/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gu" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-tc-fUk">
+                                <rect key="frame" x="91" y="30" width="130" height="44"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-MR-l4a">
+                                <rect key="frame" x="229" y="37" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PM6-tu-sK9">
+                                <rect key="frame" x="370" y="41" width="22" height="22"/>
+                                <animations/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZX-HV-Gt1">
+                                <rect key="frame" x="334" y="37" width="28" height="30"/>
+                                <animations/>
+                                <state key="normal" title="🔍"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-y1-b5S">
+                                <rect key="frame" x="20" y="37" width="63" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.62315276460000002" green="0.117642049" blue="0.1873449623" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-JD-Deu">
+                                <rect key="frame" x="20" y="550" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Today"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOJ-oI-Rny">
+                                <rect key="frame" x="256" y="550" width="70" height="30"/>
+                                <animations/>
+                                <state key="normal" title="My Event"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hC8-k2-drZ">
+                                <rect key="frame" x="132" y="550" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Setting"/>
+                            </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9bD-oU-zcb" secondAttribute="bottom" constant="364" id="3rk-68-Xb2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9bD-oU-zcb" secondAttribute="trailing" id="WkG-fg-0zw"/>
-                            <constraint firstItem="9bD-oU-zcb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dDs-l5-fmr"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="9bD-oU-zcb" secondAttribute="leading" id="php-Eg-1eP"/>
+                            <constraint firstItem="9bD-oU-zcb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="CXq-CJ-O26"/>
+                            <constraint firstItem="9bD-oU-zcb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qhe-wk-YXz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9bD-oU-zcb" secondAttribute="trailing" id="jLr-Nz-nPb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9bD-oU-zcb" secondAttribute="leading" id="kaQ-bn-JGW"/>
                         </constraints>
                     </view>
                     <connections>
@@ -40,7 +88,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="399"/>
+            <point key="canvasLocation" x="180" y="358"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gu" width="75" height="78"/>
+    </resources>
 </document>
