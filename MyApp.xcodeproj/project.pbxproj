@@ -14,6 +14,8 @@
 		3524FC831C14DF6A008DD2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3524FC821C14DF6A008DD2AE /* Assets.xcassets */; };
 		3524FC861C14DF6A008DD2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3524FC841C14DF6A008DD2AE /* LaunchScreen.storyboard */; };
 		43672BC99376415B6290A901 /* libPods-MyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E51B60F3C4B331DFC4AC153D /* libPods-MyApp.a */; };
+		7830E7341C1A9196008EEDC8 /* CommitteeLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830E7331C1A9196008EEDC8 /* CommitteeLoginVC.m */; };
+		7830E7371C1A91F2008EEDC8 /* Persistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830E7361C1A91F2008EEDC8 /* Persistance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		3524FC851C14DF6A008DD2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3524FC871C14DF6A008DD2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408CA310FDC60E8E93CC04FE /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp/Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7830E7321C1A9196008EEDC8 /* CommitteeLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitteeLoginVC.h; sourceTree = "<group>"; };
+		7830E7331C1A9196008EEDC8 /* CommitteeLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitteeLoginVC.m; sourceTree = "<group>"; };
+		7830E7351C1A91F2008EEDC8 /* Persistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persistance.h; sourceTree = "<group>"; };
+		7830E7361C1A91F2008EEDC8 /* Persistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persistance.m; sourceTree = "<group>"; };
 		CA1CEB8228063CF94D5B92C2 /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp/Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
 		E51B60F3C4B331DFC4AC153D /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +83,10 @@
 				3524FC7A1C14DF6A008DD2AE /* AppDelegate.m */,
 				3524FC7C1C14DF6A008DD2AE /* ViewController.h */,
 				3524FC7D1C14DF6A008DD2AE /* ViewController.m */,
+				7830E7321C1A9196008EEDC8 /* CommitteeLoginVC.h */,
+				7830E7331C1A9196008EEDC8 /* CommitteeLoginVC.m */,
+				7830E7351C1A91F2008EEDC8 /* Persistance.h */,
+				7830E7361C1A91F2008EEDC8 /* Persistance.m */,
 				3524FC7F1C14DF6A008DD2AE /* Main.storyboard */,
 				3524FC821C14DF6A008DD2AE /* Assets.xcassets */,
 				3524FC841C14DF6A008DD2AE /* LaunchScreen.storyboard */,
@@ -224,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7830E7371C1A91F2008EEDC8 /* Persistance.m in Sources */,
 				3524FC7E1C14DF6A008DD2AE /* ViewController.m in Sources */,
 				3524FC7B1C14DF6A008DD2AE /* AppDelegate.m in Sources */,
+				7830E7341C1A9196008EEDC8 /* CommitteeLoginVC.m in Sources */,
 				3524FC781C14DF6A008DD2AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
